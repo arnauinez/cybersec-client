@@ -1,0 +1,12 @@
+
+<div class="content">
+    <app-buttons 
+        (receiveMessageEvent)="receiveMsg()" 
+        (sendMessageEvent)="sendMsg()">
+    </app-buttons>
+
+    <app-text-area
+        [sendMsgSubject]="sendMsgSubject"
+        [receiveMsgSubject]="receiveMsgSubject"
+    ></app-text-area>
+</div>
